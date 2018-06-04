@@ -1,0 +1,1 @@
+require('AnimPlayer/index.js');
