@@ -22,6 +22,6 @@
 /animplayer - запускает AnimPlayer командой.\
 /animplayer [request]\(строка поиска\) - находит анимации по запросу (формирует список по request) и запускает AnimPlayer если он был до этого закрыт.\
 /animplayer [dist/dist+name]\(числовые указатели\) - находит анимацию по указаной директории (dist), запускает AnimPlayer и запускает анимацию под номером (name).\
-/animflag [up/down/id]\(строковый или числовой указатель\) - повышает, понижает или указывает значение flag для анимации (См. [wiki.rage.mp:Animations]:https://wiki.rage.mp/index.php?title=Animations).
+/animflag [up/down/id]\(строковый или числовой указатель\) - повышает, понижает или указывает значение flag для анимации (См. [wiki.rage.mp:Animations](https://wiki.rage.mp/index.php?title=Animations)).
 
 
