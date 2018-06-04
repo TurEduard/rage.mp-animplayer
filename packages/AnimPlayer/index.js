@@ -8,13 +8,10 @@ mp.events.add({
 		const commandName = args.splice(0, 1)[0];
 		switch(commandName){
 			case 'animplayer': 
-				if(args[0] != undefined && args[0].length){
-					if(args[0].match(/^[-\+]?\d+/) !== null){
-						let name = (args[1] != undefined && args[1].match(/^[-\+]?\d+/) !== null) ? parseInt(args[1]) : false;
-						player.call('findAnim', [parseInt(args[0]), name]); 
-					} else player.call('createAnimList', [args[0]]); 
-					
-				} else player.outputChatBox("Current command: /animplayer [request/dist/dist&name]");
+				if(args[0] != undefined && args[0].length && args[0].match(/^[-\+]?\d+/) !== null){
+					let name = (args[1] != undefined && args[1].match(/^[-\+]?\d+/) !== null) ? parseInt(args[1]) : false;
+					player.call('findAnim', [parseInt(args[0]), name]); 
+				} else player.call('createAnimList', [args[0]]); 
 				break;
 			case 'animflag':
 				if(args[0].match(/^[-\+]?\d+/) !== null) player.call('animFlag', [parseInt(args[0])]);
